@@ -1,13 +1,52 @@
-# TaviArt-Game-Project
-Helping TaviArt on her basic game. 
+# TaviArt School Game Project
 
-## I DO NOT own any of the assets nor the project itself, i've only been working on this project due comission.
-### Coding: zVioletta
-### Art: Multiple sources
-### Project: TaviArt
+> [!WARNING]
+> ### I DO NOT own any of the assets, sprites nor the project itself, I've only been working on this project due comission.
 
-### Actual Status: Alpha 0.03 (2024-10-17@02:20)
-### Current Features
-Sprites actually working for character animations as walking, idle and jumping (this last one i'm not quite sure it actually works well...); Background loading, aswell as physics for the entire project; basic camera system; basic score system; life counter (may need to be moved to another place), aswell as world invisible floor and walls to avoid the character to fall off the screen.
-### Current Bugs
-Character animations may be a little too fast, for example, walking animation feels too fast, the idle animation (first frame is the character with open eyes, and second frame is the character with closed eyes) is too fast, resulting annoying. Jump animation may just be seen by a single frame and then it is overridden by the walking animation.
+> [!NOTE]
+> ### CREDITS
+> Coding: @zVioletta
+> 
+> Project: TaviArt
+> 
+> Art: Multiple sources, mainly from:
+>> * [Spriters-Resource](https://www.spriters-resource.com/)
+>> * [Open Game Art](https://opengameart.org/)
+>> * TaviArt herself!
+
+## Actual Status
+
+:white_check_mark: ***Working!*** Alpha 0.05 (2024-10-17 @ 15:28)
+
+***
+
+### Current features
+
+* [X] Sprites working for character animations: walking, idle and jumping
+* [X] Background loads, aswell as physics for the entire project
+* [X] Basic camera system
+* [X] Basic score system
+* [X] Life counter
+* [X] World invisible floor and walls to avoid the character to fall off the screen
+* [X] Follower and coins.
+* [X] Map props (houses, flags, box, trampoline, etc.).
+* [X] Main level animated key holder and key.
+* [X] Map size increased.
+* [X] "Climbable" Wall (it has stones around it).
+
+***
+
+### Current bugs
+
+* [ ] \(Optional) Character animations are still too fast resulting annoying.
+* [ ] \(Optional) Jump animation may just be seen by a single frame and then it is overridden by the walking/idle animation.
+
+***
+
+### Current changes respecting to base reference
+
+* Model changes from a cat to Rock Man
+* Background changed from a forest to a city.
+* The character is now able to jump with an specific sprite for the animation (may need to implement more so it loops).
+* Map is relatively smaller. 
+* Changed follower and coins model.

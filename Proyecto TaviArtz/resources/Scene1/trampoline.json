@@ -1,0 +1,49 @@
+{"frames": {
+
+"traSalto_0000":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":17},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":16,"h":17},
+	"sourceSize": {"w":16,"h":19}
+},
+"traSalto_0001":
+{
+	"frame": {"x":16,"y":0,"w":16,"h":13},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":16,"h":13},
+	"sourceSize": {"w":16,"h":19}
+},
+"traSalto_0002":
+{
+	"frame": {"x":0,"y":17,"w":16,"h":9},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":10,"w":16,"h":9},
+	"sourceSize": {"w":16,"h":19}
+},
+"traSalto_0003":
+{
+	"frame": {"x":16,"y":17,"w":16,"h":19},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":19},
+	"sourceSize": {"w":16,"h":19}
+},
+"traSalto_0004":
+{
+	"frame": {"x":0,"y":36,"w":16,"h":17},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":16,"h":17},
+	"sourceSize": {"w":16,"h":19}
+}
+}, 
+"meta": {
+	"image": "trampoline.png",
+	"format": "RGBA8888",
+	"size": {"w":32,"h":53}
+}
+}
