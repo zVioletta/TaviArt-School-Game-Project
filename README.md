@@ -16,7 +16,7 @@
 
 ## Actual Status
 
-:white_check_mark: ***Working!*** Alpha 0.05 (2024-10-17 @ 15:30)
+:white_check_mark: ***Working!*** Alpha 0.06 (2024-10-20 @ 15:35)
 
 ***
 
@@ -33,6 +33,8 @@
 * [X] Main level animated key holder and key.
 * [X] Map size increased.
 * [X] "Climbable" Wall (it has stones around it).
+* [X] "Trampoline" (it has a trampoline sprite).
+* [X] "Portal" added.
 
 ***
 
@@ -40,6 +42,7 @@
 
 * [ ] \(Optional) Character animations are still too fast resulting annoying.
 * [ ] \(Optional) Jump animation may just be seen by a single frame and then it is overridden by the walking/idle animation.
+* [ ] Game Over scene fails to load when using the "vec" variable, hence, it won't load the Game Over minigame (when using this variable, the game won't load).
 
 ***
 

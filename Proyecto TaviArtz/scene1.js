@@ -1,5 +1,18 @@
 class Scene1 extends Phaser.Scene {
     
+    //! Constructor for game initialization
+    constructor() {
+        super({
+            key: "Scene1",
+            physics: {
+                arcade: {
+                    debug: false,
+                    gravity: { y: 300 }
+                }
+            }
+        });
+    }
+
     //! Global variables
     character;
     gameObjects;
@@ -25,19 +38,11 @@ class Scene1 extends Phaser.Scene {
     score;
     scoreText;
 
-    //! Constructor for game initialization
-    constructor() {
-        super({
-            key: "Scene1",
-            physics: {
-                arcade: {
-                    debug: true,
-                    gravity: { y: 300 }
-                }
-            }
-        });
-    }
+    emitter;
+    emitterZone;
+    portal;
     
+    //! Preload functions on a separate each function to keep the code clean and organized.
     preload() {
         //TODO Create or use new ASSETS for the game and import them here.
         //! Background
@@ -84,6 +89,10 @@ class Scene1 extends Phaser.Scene {
 
         //! Key spritesheet
         // this.load.spritesheet("Sc1_key", "resources/Scene1/key.png", { frameWidth: 187, frameHeight: 128 }); //* Key animation sprite
+
+        //! Video 21 Portal Stuff
+        this.load.atlas("Sc1_portal", "resources/Scene1/portal.png", "resources/Scene1/portal.json");
+        this.load.image("Sc1_particle", "resources/Scene1/particle.png");
     }
 
     //! Create functions on a separate function to keep the code clean and organized.
@@ -100,6 +109,7 @@ class Scene1 extends Phaser.Scene {
     //     });
     // }
     
+    //! Character creation
     createCharacter() {
         this.character = this.physics.add.sprite(410, 200, "Sc1_character");
         this.character.setBounce(0.2);
@@ -109,6 +119,7 @@ class Scene1 extends Phaser.Scene {
         this.character.setOffset(0, 0);
     }
 
+    //! Character animations
     createAnimationCharacter() {
         this.anims.create({
             key: "Sc1_idle",
@@ -144,6 +155,7 @@ class Scene1 extends Phaser.Scene {
         });
     }
 
+    //! Game objects/props creation and placement
     createGameObjects() {
         this.gameObjects = this.physics.add.staticGroup();
         // * Create objects, take on count keynames.
@@ -180,6 +192,7 @@ class Scene1 extends Phaser.Scene {
         // this.gameObjects.create(x, y, "Sc1_stone"); // ! Additional Stones
     }
 
+    //! "Coins" creation and collection
     createGifts() {
         this.gifts = this.physics.add.group();
         for (var i = 0; i < 18; i++) {
@@ -194,6 +207,7 @@ class Scene1 extends Phaser.Scene {
         this.scoreText.setText("Score: " + this.score);
     }
 
+    //! Trampoline animation creation
     createAnimationTrampoline() {
         this.anims.create({
             key: "Sc1_trampJump",
@@ -212,8 +226,9 @@ class Scene1 extends Phaser.Scene {
         });
     }
 
+    //! Key creation and animation
     createKey () {
-        this.add.rectangle(2050, 100, 174, 94, 0x00f000, .5); // * Key hitbox for testing purposes
+        // this.add.rectangle(2050, 100, 174, 94, 0x00f000, .5); // * Key hitbox for testing purposes
         this.key = this.add.sprite(2050, 100, "Sc1_key");
     }
 
@@ -257,6 +272,7 @@ class Scene1 extends Phaser.Scene {
         this.angle += 1;
     }
 
+    //! Lifes creation
     createLifes() {
         this.lifes = this.add.group();
         for (var i = 0; i < 7; ++i) {
@@ -266,11 +282,46 @@ class Scene1 extends Phaser.Scene {
         this.lifes.fixedToCamera = true;
     }
 
+    //! Score text creation
     createScoreText() {
         this.scoreText = this.add.text(0, 0, "Score: ", { font: "16px Consolas", fill: "#ff0000", align: "center" }).setScrollFactor(0);
         this.scoreText.fixedToCamera = true;
     }
 
+    //! Portal creation
+    createPortal() {
+        // * THE PORTAL GOES TO THE CHUCHA WTH
+        this.portal = this.add.sprite(2200, 570, "Sc1_portal").setScale(0.3);
+
+        this.emitterZone = { type: "edge", source: this.portal.getBounds(), quantity: 42 };
+
+        this.emitter = this.add.particles(0, 0, "Sc1_particle", {
+            speed: 24,
+            lifespan: 1500,
+            quantity: 8,
+            scale: { start: 0.1, end: 0.0 },
+            advance: 2000,
+            emitZone: [ this.emitterZone ],
+        });
+
+        this.emitter.setParticleGravity(Phaser.Math.Between(20, 100), 300);
+    }
+
+    //! Portal animation
+    createPortalAnimation() {
+        this.anims.create({
+            key: "Sc1_pActive",
+            frames: this.anims.generateFrameNames("Sc1_portal", {
+                prefix: "portal_",
+                end: 20,
+                frameRate: 12,
+                zeroPad: 4
+            }),
+            repeat: -1
+        });
+    }
+
+    //! Create function for game initialization
     create() {
         this.score = 0;
 
@@ -301,6 +352,8 @@ class Scene1 extends Phaser.Scene {
         
         this.createScoreText();
         
+        this.createPortal();
+        this.createPortalAnimation();
         
         // this.character = this.add.sprite(900, 500, "character");
         // this.character.play("Sc1_idle", true);
@@ -322,8 +375,13 @@ class Scene1 extends Phaser.Scene {
         this.physics.add.overlap(this.character, this.gifts, this.collectGifts, null, this);
         this.physics.add.collider(this.character, this.trampoline);
         this.physics.add.collider(this.trampoline, this.gameObjects);
+
+        //! Video 21 Portal Stuff
+        this.portal.anims.play("Sc1_pActive", true);
+        // console.log("portal activo");
     }
 
+    //! Update function for gameplay
     update() {	
         //! Key collection and destruction
         if (this.character.body.x >= 2050 && this.character.body.x <= 2050 + 174 && this.character.body.y >= 100 && this.character.body.y <= 100 + 94 && this.hasKey == false) {

@@ -1,0 +1,432 @@
+{
+	"frames": {
+		"portal_0000": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 85,
+				"h": 202
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 28,
+				"y": 17,
+				"w": 85,
+				"h": 202
+			},
+			"sourceSize": {
+				"w": 153,
+				"h": 240
+			}
+		},
+		"portal_0001": {
+			"frame": {
+				"x": 85,
+				"y": 0,
+				"w": 84,
+				"h": 200
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 42,
+				"y": 16,
+				"w": 84,
+				"h": 200
+			},
+			"sourceSize": {
+				"w": 166,
+				"h": 230
+			}
+		},
+		"portal_0002": {
+			"frame": {
+				"x": 169,
+				"y": 0,
+				"w": 85,
+				"h": 200
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 35,
+				"y": 6,
+				"w": 85,
+				"h": 200
+			},
+			"sourceSize": {
+				"w": 155,
+				"h": 218
+			}
+		},
+		"portal_0003": {
+			"frame": {
+				"x": 254,
+				"y": 0,
+				"w": 83,
+				"h": 199
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 39,
+				"y": 14,
+				"w": 83,
+				"h": 199
+			},
+			"sourceSize": {
+				"w": 159,
+				"h": 225
+			}
+		},
+		"portal_0004": {
+			"frame": {
+				"x": 337,
+				"y": 0,
+				"w": 83,
+				"h": 201
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 52,
+				"y": 18,
+				"w": 83,
+				"h": 201
+			},
+			"sourceSize": {
+				"w": 189,
+				"h": 243
+			}
+		},
+		"portal_0005": {
+			"frame": {
+				"x": 420,
+				"y": 0,
+				"w": 82,
+				"h": 202
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 47,
+				"y": 22,
+				"w": 82,
+				"h": 202
+			},
+			"sourceSize": {
+				"w": 180,
+				"h": 258
+			}
+		},
+		"portal_0006": {
+			"frame": {
+				"x": 0,
+				"y": 202,
+				"w": 81,
+				"h": 201
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 45,
+				"y": 15,
+				"w": 81,
+				"h": 201
+			},
+			"sourceSize": {
+				"w": 159,
+				"h": 237
+			}
+		},
+		"portal_0007": {
+			"frame": {
+				"x": 81,
+				"y": 202,
+				"w": 81,
+				"h": 202
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 31,
+				"y": 1,
+				"w": 81,
+				"h": 202
+			},
+			"sourceSize": {
+				"w": 159,
+				"h": 224
+			}
+		},
+		"portal_0008": {
+			"frame": {
+				"x": 162,
+				"y": 202,
+				"w": 80,
+				"h": 200
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 41,
+				"y": 9,
+				"w": 80,
+				"h": 200
+			},
+			"sourceSize": {
+				"w": 164,
+				"h": 228
+			}
+		},
+		"portal_0009": {
+			"frame": {
+				"x": 242,
+				"y": 202,
+				"w": 80,
+				"h": 196
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 40,
+				"y": 11,
+				"w": 80,
+				"h": 196
+			},
+			"sourceSize": {
+				"w": 156,
+				"h": 226
+			}
+		},
+		"portal_0010": {
+			"frame": {
+				"x": 322,
+				"y": 202,
+				"w": 80,
+				"h": 195
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 51,
+				"y": 18,
+				"w": 80,
+				"h": 195
+			},
+			"sourceSize": {
+				"w": 180,
+				"h": 229
+			}
+		},
+		"portal_0011": {
+			"frame": {
+				"x": 402,
+				"y": 202,
+				"w": 81,
+				"h": 192
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 36,
+				"y": 13,
+				"w": 81,
+				"h": 192
+			},
+			"sourceSize": {
+				"w": 157,
+				"h": 222
+			}
+		},
+		"portal_0012": {
+			"frame": {
+				"x": 0,
+				"y": 404,
+				"w": 81,
+				"h": 196
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 43,
+				"y": 12,
+				"w": 81,
+				"h": 196
+			},
+			"sourceSize": {
+				"w": 165,
+				"h": 228
+			}
+		},
+		"portal_0013": {
+			"frame": {
+				"x": 81,
+				"y": 404,
+				"w": 82,
+				"h": 190
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 42,
+				"y": 11,
+				"w": 82,
+				"h": 190
+			},
+			"sourceSize": {
+				"w": 154,
+				"h": 212
+			}
+		},
+		"portal_0014": {
+			"frame": {
+				"x": 163,
+				"y": 404,
+				"w": 83,
+				"h": 191
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 38,
+				"y": 36,
+				"w": 83,
+				"h": 191
+			},
+			"sourceSize": {
+				"w": 153,
+				"h": 239
+			}
+		},
+		"portal_0015": {
+			"frame": {
+				"x": 246,
+				"y": 404,
+				"w": 82,
+				"h": 201
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 36,
+				"y": 14,
+				"w": 82,
+				"h": 201
+			},
+			"sourceSize": {
+				"w": 156,
+				"h": 243
+			}
+		},
+		"portal_0016": {
+			"frame": {
+				"x": 328,
+				"y": 404,
+				"w": 83,
+				"h": 204
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 41,
+				"y": 10,
+				"w": 83,
+				"h": 204
+			},
+			"sourceSize": {
+				"w": 153,
+				"h": 228
+			}
+		},
+		"portal_0017": {
+			"frame": {
+				"x": 411,
+				"y": 404,
+				"w": 82,
+				"h": 206
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 37,
+				"y": 19,
+				"w": 82,
+				"h": 206
+			},
+			"sourceSize": {
+				"w": 150,
+				"h": 236
+			}
+		},
+		"portal_0018": {
+			"frame": {
+				"x": 0,
+				"y": 610,
+				"w": 82,
+				"h": 203
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 41,
+				"y": 26,
+				"w": 82,
+				"h": 203
+			},
+			"sourceSize": {
+				"w": 162,
+				"h": 237
+			}
+		},
+		"portal_0019": {
+			"frame": {
+				"x": 82,
+				"y": 610,
+				"w": 82,
+				"h": 200
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 82,
+				"h": 200
+			},
+			"sourceSize": {
+				"w": 82,
+				"h": 200
+			}
+		},
+		"portal_0020": {
+			"frame": {
+				"x": 164,
+				"y": 610,
+				"w": 83,
+				"h": 193
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 30,
+				"y": 11,
+				"w": 83,
+				"h": 193
+			},
+			"sourceSize": {
+				"w": 143,
+				"h": 213
+			}
+		}
+	},
+	"meta": {
+		"image": "portal",
+		"format": "RGBA8888",
+		"size": {
+			"w": 502,
+			"h": 813
+		}
+	}
+}

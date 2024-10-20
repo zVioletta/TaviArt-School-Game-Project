@@ -6,13 +6,13 @@ var config = {
     scene: [Scene1, GameOver],
     useTicker: true,
     pixelArt: true,
-    physics: {
-        default: 'arcade',
-        arcade: {
-            debug: false,
-            gravity: { y: 300 }
-        }
-    },
+    // physics: {
+    //     default: 'arcade',
+    //     arcade: {
+    //         debug: false,
+    //         gravity: { y: 300 }
+    //     }
+    // },
     scale: {
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH
